@@ -13,7 +13,7 @@ let decode(data) = do
     if (decoded.length == 0) return data
     return decoded.to("string")
 
-let toNotEncode = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.~"
+let toNotEncode = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.~ "
 
 let encode(data) = do
     let encoded = []
