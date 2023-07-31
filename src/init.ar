@@ -24,7 +24,7 @@ let encode(data) = do
         else do
             encoded.append("%"+hex(ord(data[i])))
         i = i + 1
-    return encoded.join("")
+    return encoded.join("").replace(" ", "+")
 
 let decodeURLQuery(querytext) = do
     let query = {}
