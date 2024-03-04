@@ -61,7 +61,6 @@ let URL(url) = do
     try do
         let split = url.split("://")
         if (split.length == 1) do
-            protocol = "http"
             split = url.split("/")
             if (split.length == 1) do
                 host = split[0]
