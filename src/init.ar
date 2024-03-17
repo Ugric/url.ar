@@ -96,6 +96,9 @@ let URL(url) = do
         let split = splitFunc(path)
         path = split.path
         query = split.query
-        return {protocol: protocol, host: host, port: port, path: path, query: query, hash: hash}
     catch (e) do
-        return
+    
+    return {protocol: protocol, host: host, port: port, path: path, query: query, hash: hash}
+
+if (program.main) do
+    term.log(URL("7y86tyguhiu7yguhu"))
